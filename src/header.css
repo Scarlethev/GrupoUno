@@ -1,0 +1,29 @@
+.menu{
+    display:flex;
+    height: 200px;
+
+}
+
+.ancla-menu{
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(204, 191, 191, 0.2);
+    margin:10px;
+}
+
+li{
+    color: grey;
+    justify-content: center;
+    font-family: sans-serif
+}
+
+li:hover{
+    transform: scale(1.1);
+    }

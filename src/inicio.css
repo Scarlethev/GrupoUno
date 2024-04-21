@@ -1,0 +1,152 @@
+.inicio{
+    position: relative;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap:20px;
+    flex-wrap:wrap-reverse;
+}
+
+.text{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 600px;
+    margin-left: 100px;
+    font-size: 35px;
+    font-weight: 400;
+    font-family:sans-serif;
+    text-align: start;
+}
+
+.fir-text{
+color:blacK;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.sec-text{
+    color:#6248f7;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.parrafo{
+    color: #343434bd;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.button{
+position: relative;
+width:40%;
+height: 50px;
+background-color: #5133f7;
+border-radius: 30px;
+color: #ffff;
+font-size: 18px;
+}
+
+.button:hover{
+    transform: scale(1.1)
+}
+
+.img-banner{
+    height: 400px;
+    width:45%;
+    animation: traslate;
+}
+
+.textDos{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin: 100px 100px;
+    font-size: 30px;
+    font-family:sans-serif;
+    text-align: justify;
+}
+
+.fir-text-textDos{
+width:600px;
+margin: 0%;
+text-align: start;
+}
+
+.sec-text-textDos{
+margin: 0%;
+width:600px;
+text-align: start;
+}
+
+.tre-text-textDos{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.parrafo-textDos{
+font-size: 18px;
+line-height: 1.8;
+}
+
+.banner-serv{
+    background:url(./assets/fondodepantalla.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-banner{
+    color:#fff;
+    font-size: 3em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+@media (max-width: 991px) {
+    .text{
+      width:100%;
+      text-align:center;
+      font-size: 18;
+      margin: 0%;
+    }
+
+    .button{
+        width:100%;
+        justify-content: center;
+    }
+    
+  }
+  @media (max-width: 768px) {
+    .text{
+        width:100%;
+        text-align:center;
+        font-size: 18;
+        margin: 0%;
+      }
+  
+      .button{
+          width:100%;
+          justify-content: center;
+      }
+  }
+  @media (max-width: 575px) {
+    .text{
+        width:100%;
+        text-align:center;
+        font-size: 18;
+        margin: 0%;
+      }
+  
+      .button{
+          width:100%;
+          justify-content: center;
+      }
+    }
+
+
+
+
