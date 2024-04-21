@@ -1,5 +1,5 @@
 import './inicio.css'
-import banner from './assets/fotobanner.png'
+import banner from '../../assets/fotobanner.png'
 
 const Inicio = () => {
 

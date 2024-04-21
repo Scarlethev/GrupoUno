@@ -1,5 +1,4 @@
-import './inicio.css'
-
+import '../Inicio/inicio.css'
 const Servicios=()=>{
 
     return(
