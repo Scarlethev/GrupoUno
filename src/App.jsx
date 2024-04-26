@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Inicio from './Inicio.jsx'
-import Servicios from './Servicios.jsx'
+import Header from './components/Header/Header'
+import Inicio from './components/Inicio/Inicio'
+import Servicios from './components/Servicios/Servicios'
+import Footer from './components/Footer/Footer' 
 
 function App() {
   const [count, setCount] = useState(0)
