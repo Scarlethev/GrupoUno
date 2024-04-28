@@ -16,7 +16,7 @@ export default function Sugerencias() {
     };
 
     return (
-        <div className="d-flex justify-content-center flex-column align-items-center">
+        <div className="d-flex justify-content-center flex-column align-items-center my-5">
             <h3>Sugerencias</h3>
             <p>¿Quieres dejar algún comentario? ¡Tu opinión también importa!</p>
             <div className='d-flex flex-column'>

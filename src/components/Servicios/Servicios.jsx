@@ -1,27 +1,5 @@
-import '../Inicio/inicio.css'
-const Servicios=()=>{
+import { CardsGrid } from "../Servicios/CardsGrid";
 
-    return(
-        <>
-        <section className='banner-serv'>
-
-        <div>
-            <h1 className='title-banner'>¿QUE OFRECEMOS?</h1>
-
-        
-
-        </div>
-
-
-
-
-        </section>
-        
-        
-        </>
-
-    )
-
-}
-
-export default Servicios
+export const Servicios = () => {
+  return <CardsGrid />;
+};
