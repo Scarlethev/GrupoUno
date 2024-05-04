@@ -8,11 +8,13 @@ const Inicio = () => {
         <>
             <section className="inicio">
                 <div className='text'>
-                    <h1 className='fir-text'>Transformando ideas en experiencias digitales</h1>
+                    <h1 className='fir-text'><strong>Transformando ideas en experiencias digitales</strong></h1>
                     <p className='parrafo'>Contáctenos y convierta su página web en un reflejo fiel de su identidad y visión</p>
-                    <button className='button'><i>¡Quiero mi página web!</i></button>
                 </div>
-                <img className='img-banner' src={banner} alt="img-banner" />
+                <div className='button'>
+                <button className='button_text'><i>¡Quiero mi página web!</i></button>
+                </div>
+                
             </section>
 
             <section className='textDos'>
