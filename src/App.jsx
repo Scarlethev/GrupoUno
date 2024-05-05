@@ -4,34 +4,24 @@ import Inicio from "./components/Inicio/Inicio";
 import { Servicios } from "./components/Servicios/Servicios";
 import Footer from "./components/Footer/Footer";
 import Sugerencias from "./components/Sugerencias";
-import { BrowserRouter, Routes, Router, Route, Link} from 'react-router-dom'
+import { BrowserRouter, Routes, Router, Route} from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Header
-        lista={[
-          "INICIO ",
-          "SERVICIOS ",
-          "BENEFICIOS ",
-          "TIPOS DE PAGINAS ",
-          "TRABAJOS REALIZADOS",
-          "CONTACTOS",
-        ]}
-      />
-      <Inicio />
-      <Servicios />
-      <Footer />
+<Header/>
 
-  
 <BrowserRouter>
 <Routes>
-<Route path= "/" element="inicio"/>
-<Route path= "/pelicula" element="detalle pelicula"/>
+<Route path= "/" element={<Inicio/>}/>
+<Route path= "/servicio" element={<Servicios/>}/>
+<Route path= "/sugerencias" element={<Sugerencias/>}/>
 </Routes>
 </BrowserRouter>
+
+<Footer />
     </>
   );
 }

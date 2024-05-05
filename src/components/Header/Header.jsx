@@ -1,18 +1,21 @@
 import './header.css'
-
-const Header=({lista})=>{
-
-    let ul=lista.map((item, index)=>
+import {Link} from 'react-router-dom'
 
 
-    <a className='ancla-menu' key={index}><li>{item}</li></a>)
+const Header=({})=>{
+
+    const lista =[{name: 'Inicio', url:'/'}, {name: 'Servicios', url: '/servicios'},{name: 'Sugerencias', url: '/sugerencias'}]
+
 
     return(
         <>
-        <ul>{ul}</ul>
+        <ul>{lista.map((item,index)=>
+                (
+            <li key={index}><Link to={item.url} className='ancla-menu'>{item.name}</Link></li>
+            ))}</ul>
         </>
-    )
 
+        )
     }
 
     export default Header;
