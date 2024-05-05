@@ -6,6 +6,7 @@
 
 .ancla-menu{
     cursor: pointer;
+    text-decoration: none;
 }
 
 ul{
