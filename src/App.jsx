@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Inicio from "./components/Inicio/Inicio";
 import { Servicios } from "./components/Servicios/Servicios";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter, Routes, Router, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Router, Route, Link} from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,24 +24,13 @@ function App() {
       <Servicios />
       <Footer />
 
-
-
-
-
-
   
 <BrowserRouter>
 <Routes>
-<Route path= "/" element={<App/>}/>
+<Route path= "/" element="inicio"/>
 <Route path= "/pelicula" element="detalle pelicula"/>
-
-
 </Routes>
 </BrowserRouter>
-
-
-
-
     </>
   );
 }

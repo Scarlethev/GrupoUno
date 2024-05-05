@@ -2,8 +2,10 @@ import './header.css'
 
 const Header=({lista})=>{
 
-    let ul=lista.map(item=><a className='ancla-menu'><li>{item}</li></a>)
+    let ul=lista.map((item, index)=>
 
+
+    <a className='ancla-menu' key={index}><li>{item}</li></a>)
 
     return(
         <>
