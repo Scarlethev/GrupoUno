@@ -1,3 +1,11 @@
-.menu-footer{
+.menu-footer {
     height: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(204, 191, 191, 0.2);
+}
+
+.leyenda {
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    margin-top: 10px;
 }
