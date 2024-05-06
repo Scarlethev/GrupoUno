@@ -3,12 +3,11 @@
     display: flex;
     height: 650px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     align-items: center;
     row-gap: 20px;
     flex-wrap: wrap;
-    background-color: #000;
-
 }
 
 .text {
@@ -19,10 +18,9 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    margin: auto;
     font-weight: 400;
     font-family: sans-serif;
-    row-gap: 50px;
+    row-gap: 20px;
 }
 
 .fir-text {
@@ -30,7 +28,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 64px;
-    color: #6248f7;
+    color: #a072f9;
 }
 
 .parrafo {
@@ -42,32 +40,9 @@
     font-size: 24px;
 }
 
-.button {
-    position: relative;
-    width: 30%;
-    height: 50px;
-    background-color: #5133f7;
-    border-radius: 30px;
-    color: #ffff;
-    font-size: 18px;
-    margin-right: 50%;
-    margin-bottom: 100px;
-    display: flex;
-}
-
-.button_text {
-    position: relative;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    border-radius: 30px;
-}
-
 .button:hover {
     transform: scale(1.1)
-}
+} 
 
 .img-banner {
     height: 400px;
@@ -80,9 +55,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 100px 100px;
+    margin: 10px 100px 100px 100px;
     font-size: 30px;
-    font-family: sans-serif;
     text-align: justify;
 }
 
@@ -90,12 +64,14 @@
     width: 600px;
     margin: 0%;
     text-align: start;
+    color:  #a072f9;
 }
 
 .sec-text-textDos {
     margin: 0%;
     width: 600px;
     text-align: start;
+    color:  #a072f9;
 }
 
 .tre-text-textDos {
@@ -136,10 +112,10 @@
         margin: 0px;
     }
 
-    .button {
+    /* .button {
         width: 100%;
         justify-content: center;
-    }
+    } */
 
 }
 
@@ -158,10 +134,10 @@
         height: auto;
     }
 
-    .button {
+    /* .button {
         width: 100%;
         justify-content: center;
-    }
+    } */
 }
 
 @media (max-width:575px) {
@@ -187,13 +163,13 @@
         height: auto;
         flex-wrap: wrap;
         font-size: 42px;
-        color: #6248f7;
+        color: #a072f9;
       
     }
 
 
-    .button {
+    /* .button {
         width: 100%;
         justify-content: center;
-    }
+    } */
 }

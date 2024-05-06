@@ -7,11 +7,12 @@ export const CardsGrid = () => {
     <div
       className="container-fluid "
       style={{
-        background: "linear-gradient(to right, orange, violet, pink, blue)",
+        // background: 'linear-gradient(90deg, rgba(117,51,247,1) 0%, rgba(157,160,255,1) 47%, rgba(15,101,255,1) 100%)',
+        padding: '60px 0',
       }}
     >
       <div className="row justify-content-center">
-      <h1 className="mb-8 text-center" style={{ fontWeight: "bold", letterSpacing: "2px" }}>¿Qué ofrecemos?</h1> 
+      <h1 className="mb-4 text-center" style={{ fontWeight: "bold"}}>¿Qué ofrecemos?</h1> 
         <CardsComponent
           title="Desarrollo de Sitios Web a medida"
           text="Nos especializamos en crear sitios web personalizados, con cada línea de código diseñada con precisión para cumplir tus necesidades específicas. Desde la idea hasta la ejecución, estamos comprometidos a desarrollar experiencias digitales excepcionales que impulsen tu éxito en línea."

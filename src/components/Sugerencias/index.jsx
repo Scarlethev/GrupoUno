@@ -28,12 +28,19 @@ export default function Sugerencias() {
                     value={comentarios}
                     onChange={(e) => setComentarios(e.target.value)}
                 ></textarea>
-                <button className="btn btn-primary my-3" type="button" onClick={handleClickPublicar}>Publicar</button>
+                <button className="btn btn-primary my-3" type="button" onClick={handleClickPublicar} style={{
+                    backgroundColor: '#a072f9',
+                    border: '1px solid #a072f9',
+                    borderRadius: '30px',
+                }}>Publicar</button>
             </div>
             <div className='d-flex flex-row flex-wrap justify-content-center'>
             {comentariosPublicados.map((comentario, index) => (
                 <SugerenciasCards key={index} content={comentario}/>
             ))}
+            <SugerenciasCards  content="Fue bastante fácil de entender las explicaciones que me daban acerca de la estructura de mi página web, realmente me quedo satisfecho con su servicio." />
+            <SugerenciasCards  content="Pudieron hacer mi e-commerce muy funcional con todo lo que necesitaba, volvería a contactar con ellos una y otra vez." />
+            <SugerenciasCards  content="No sólo la página web quedo linda estéticamente, también me ayudaron a que sea visible para mis clientes, mi negocio creció desde entonces." />
             </div>
         </div>
     );

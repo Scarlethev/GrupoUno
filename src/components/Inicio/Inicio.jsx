@@ -1,5 +1,4 @@
 import './inicio.css'
-import banner from '../../assets/fotobanner.png'
 
 const Inicio = () => {
 
@@ -12,7 +11,15 @@ const Inicio = () => {
                     <p className='parrafo'>Contáctenos y convierta su página web en un reflejo fiel de su identidad y visión</p>
                 </div>
                 <div className='button'>
-                <button className='button_text'><i>¡Quiero mi página web!</i></button>
+                   <button className="btn py-2 px-5" type="button" style={{
+                    backgroundColor: '#a072f9',
+                    border: '1px solid #a072f9',
+                    textAlign: 'center',
+                    padding: '2px 10px',
+                    color: 'white',
+                    borderRadius: '30px',
+                    scale: '(1.1)',
+                   }}>¡Quiero mi página web!</button>
                 </div>
                 
             </section>

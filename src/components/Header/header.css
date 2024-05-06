@@ -7,22 +7,45 @@
 .ancla-menu{
     cursor: pointer;
     text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    font-size: 20px;
+    position: relative;
+    margin: 6px 20px;
+    padding-bottom: 3px;
 }
+
+.ancla-menu:hover {
+    color: #a072f9;
+} 
+
+.ancla-menu::before {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: #a072f9; 
+    transition: width 0.4s ease; 
+}
+.ancla-menu:hover::before {
+    width: 100%; 
+}
+
 
 ul{
     list-style: none;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 50px;
-    box-shadow: 2px 2px 2px 1px rgba(204, 191, 191, 0.2);
     margin:10px;
 }
 
 li{
     color: grey;
     justify-content: center;
-    font-family: sans-serif
 }
 
 li:hover{
