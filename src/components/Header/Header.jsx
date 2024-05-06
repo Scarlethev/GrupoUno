@@ -1,7 +1,6 @@
 import './header.css'
 import {Link} from 'react-router-dom'
 
-
 const Header=({})=>{
 
     const lista =[{name: 'Inicio', url:'/'}, {name: 'Servicios', url: '/servicios'},{name: 'Sugerencias', url: '/sugerencias'}]
