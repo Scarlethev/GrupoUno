@@ -10,7 +10,7 @@ const Footer = () => {
 
     const renderRedesSociales = redesSociales.map((red, index) => (
         <li key={index}>
-            <a href={red.url} target="_blank" rel="noopener noreferrer" className='ancla-menu'>
+            <a href={red.url} target="_blank" rel="noopener noreferrer" className='icons'>
                 {red.icon}
             </a>
         </li>

@@ -7,7 +7,6 @@ export const CardsGrid = () => {
     <div
       className="container-fluid "
       style={{
-        // background: 'linear-gradient(90deg, rgba(117,51,247,1) 0%, rgba(157,160,255,1) 47%, rgba(15,101,255,1) 100%)',
         padding: '60px 0',
       }}
     >
