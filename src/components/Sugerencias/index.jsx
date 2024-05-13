@@ -21,7 +21,7 @@ export default function Sugerencias() {
             minHeight: '70vh',
         }}>
             <h3 style={{fontSize: '40px'}}>Sugerencias</h3>
-            <p>¿Quieres dejar algún comentario? ¡Tu opinión también importa!</p>
+            <p className='text-center pt-3 px-3'>¿Quieres dejar algún comentario? ¡Tu opinión también importa!</p>
             <div className='d-flex flex-column'>
                 <textarea 
                     name="comentarios" 

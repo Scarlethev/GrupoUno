@@ -6,7 +6,7 @@ export default function SugerenciasCards ({content}){
             <div className='d-flex'>
                <img src={usuarioImg} alt="usuarioImg" style={{width: '20px', alignSelf:'flex-start', margin:'20px 0 0 10px'}}/>
                <div className="card-body">
-                 <p className="card-text" style={{width:'405px'}}>{content}</p>
+                 <p className="card-text" >{content}</p>
                </div>
             </div>
       </div>

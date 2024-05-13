@@ -6,3 +6,9 @@ textarea {
   textarea:focus {
     outline: none;
   }
+
+  @media (max-width: 600px) {
+    #comentarios {
+      max-width: 300px;
+    }
+  }
