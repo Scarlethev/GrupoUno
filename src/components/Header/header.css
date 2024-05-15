@@ -117,9 +117,11 @@
     }
   }
   
+
   /* Ajustes adicionales para centrar los enlaces en vista de escritorio */
   @media (min-width: 769px) {
     .nav-links {
+      flex-grow: 1;
       justify-content: center; /* Centra los enlaces en pantallas grandes */
       background-color: transparent; /* Fondo transparente para el menú en vista de escritorio */
     }
