@@ -1,10 +1,9 @@
-.menu{
-    display:flex;
+.menu {
+    display: flex;
     height: 200px;
-
-}
-
-.ancla-menu{
+  }
+  
+  .ancla-menu {
     cursor: pointer;
     text-decoration: none;
     color: white;
@@ -13,13 +12,13 @@
     position: relative;
     margin: 6px 20px;
     padding-bottom: 3px;
-}
-
-.ancla-menu:hover {
+  }
+  
+  .ancla-menu:hover {
     color: #a072f9;
-} 
-
-.ancla-menu::before {
+  }
+  
+  .ancla-menu::before {
     content: ''; 
     position: absolute; 
     bottom: 0; 
@@ -28,26 +27,105 @@
     height: 2px; 
     background-color: #a072f9; 
     transition: width 0.4s ease; 
-}
-.ancla-menu:hover::before {
+  }
+  
+  .ancla-menu:hover::before {
     width: 100%; 
-}
-
-
-ul{
+  }
+  
+  ul {
     list-style: none;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    margin:10px;
-}
-
-li{
+    margin: 10px;
+    padding: 0; 
+  }
+  
+  li {
     color: grey;
     justify-content: center;
-}
-
-li:hover{
+  }
+  
+  li:hover {
     transform: scale(1.1);
+  }
+  
+  /*  menú hamburguesa */
+  .header {
+    background-color: #1d1d21; 
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    z-index: 10; 
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Ocultar por defecto */
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* responsive */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /*  icono del menú  */
     }
+  
+    .nav-links {
+      display: none; /* Ocultar los enlaces por defecto en pantallas pequeñas */
+      flex-direction: column;
+      width: 100%;
+      background-color: #1d1d21; /* Fondo negro para el menú desplegado */
+      position: absolute;
+      top: 35px; 
+      left: 0;
+      padding: 10px 0;
+      z-index: 100; 
+    }
+  
+    .nav-links.active {
+      display: flex;
+      background-color: #1d1d21; 
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+      width: 100%;
+      text-align: center; 
+    }
+  }
+  
+  /* Ajustes adicionales para centrar los enlaces en vista de escritorio */
+  @media (min-width: 769px) {
+    .nav-links {
+      justify-content: center; /* Centra los enlaces en pantallas grandes */
+      background-color: transparent; /* Fondo transparente para el menú en vista de escritorio */
+    }
+  
+    .menu-icon {
+      display: none; /* Ocultar el icono del menú en pantallas grandes */
+    }
+  }
+  
